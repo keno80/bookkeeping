@@ -1,16 +1,19 @@
 [versions]
 agp = "8.9.2"
 kotlin = "2.0.0"
-coreKtx = "1.10.1"
+coreKtx = "1.16.0"
 junit = "4.13.2"
-junitVersion = "1.1.5"
-espressoCore = "3.5.1"
-lifecycleRuntimeKtx = "2.6.1"
-activityCompose = "1.8.0"
-composeBom = "2024.04.01"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+lifecycleRuntimeKtx = "2.8.7"
+activityCompose = "1.10.1"
+composeBom = "2025.04.01"
 
-navigation-compose = "2.7.7"            # 导航库版本
-material-icons-extended = "1.6.4"       # 扩展图标库版本
+navigation-compose = "2.8.9"            # 导航库版本
+material-icons-extended = "1.7.8"       # 扩展图标库版本
+material3-window-size = "1.3.2"              # Material3 Window Size 库版本
+
+activity = "1.10.1"     # androidx.activity:activity-ktx
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -30,6 +33,8 @@ androidx-material3 = { group = "androidx.compose.material3", name = "material3" 
 
 androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigation-compose" }
 androidx-material-icons-extended = { group = "androidx.compose.material", name = "material-icons-extended", version.ref = "material-icons-extended" }
+androidx-activity = { group = "androidx.activity", name = "activity-ktx", version.ref = "activity" }
+androidx-material3-window-size = { group = "androidx.compose.material3", name = "material3-window-size-class", version.ref = "material3-window-size" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
